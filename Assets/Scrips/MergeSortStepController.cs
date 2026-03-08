@@ -34,9 +34,6 @@ public class MergeSortStepController : MonoBehaviour
             return;
         }
 
-        // This is the only thing that matters:
-        // your slots are wired reversed in the Inspector,
-        // so we place into them in reverse index order.
         int targetIndex = (splitOrder.Length - 1) - clickIndex;
 
         shot.transform.position = mergeRowSlots[targetIndex].position;
